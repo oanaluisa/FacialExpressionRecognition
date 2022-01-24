@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{%block bodyblock %}
+
+<div class="container col-md-12">
+    <br><br><br>
+    
+    <div class="col-md-12" align="center">
+        <br>
+        <h3 class="content">Testarea modelelor prin încărcare de fotografii</h3>
+        
+        <br>
+
+        <p class="content">
+            Fotografia încărcată va fi convertită în tonuri de gri, se va detecta dacă prezintă o față umană și va fi decupată.
+            <p>Modelul apoi va putea face o predicție asupra emoției regăsite în imagine.</p>
+        </p>
+        
+        <br>
+        
+        <div align="center" class="col-md-6">
+            <a class="btn btn-outline-primary" href={{ url_for('expression') }}>Încarcă o fotografie</a>
+        </div>
+        
+        
+        
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="col-md-12" align="center">
+        <br>
+        <h3 class="content">În timp real</h3>
+        <br>
+        <p class="content">
+            Prin această metodă se pot testa rețelele în timp real, prin folosirea camerei web.
+            <p>Se va lua câte un cadru pe baza căruia modelele vor face predicția.</p>
+        </p>
+        <br>
+        <br>
+        <div align="center" class="col-md-6">
+            <a class="btn btn-outline-primary" href={{ url_for('realTime') }}>Accesează camera web</a>
+        </div>
+        
+    </div>
+</div>   
+
+
+{% endblock  %}

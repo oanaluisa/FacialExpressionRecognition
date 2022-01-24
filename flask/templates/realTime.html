@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block bodyblock %}
+
+    <div class="container">
+    <h3></h3>
+    </div>
+
+    <br><br><br><br>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12" id="predict">
+                <img id="bg" width=400px height=400px src="{{ url_for('video_feed') }}">
+            </div>
+            <div class="col-md-6" id="predict">
+            </div>
+        </div>
+    </div>
+
+    <style>
+        #predict{
+            color:#002f4d;
+            text-align: center;
+        }
+    </style>
+
+{% endblock %}
