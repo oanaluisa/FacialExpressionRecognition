@@ -23,8 +23,6 @@ Python main.py
 
 TEORIE
 
-TEORIE
-
 CNN - tip special de retea neuronala cu mai multe straturi - inspirata de mecanismul sistemlui optic al creaturilor vii
 
 - compus din blocuri simple/multiple de straturi convolutionale/pooling, straturi complet conectate, strat de iesire
